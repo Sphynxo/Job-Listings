@@ -7,7 +7,7 @@ export default function JobList({ jobs, activeTags, handleTag }) {
   });
 
   return (
-    <div className={`px-[2.4rem] flex flex-col gap-[4rem]  duration-[0.5s] mb-[15rem] transition-all ${activeTags.length > 0 ? "mt-[8rem]" : "mt-[5.6rem]"} lg:px-[15.6rem] lg:gap-[2.4rem~]`}>
+    <div className={`px-[2.4rem] flex flex-col gap-[4rem]  duration-[0.5s] mb-[15rem] transition-all ${activeTags.length > 0 ? "mt-[8rem]" : "mt-[5.6rem]"} lg:px-[15.6rem] lg:gap-[2.4rem]`}>
       {filteredJobs.map((job) => (
         <div className={`px-[2.4rem] bg-white pb-[2.4rem] rounded-[5px] ${job.new ? "shadow-inner-left" : ""} lg:flex lg:justify-between lg:items-center lg:py-[3.2rem] lg:px-[4rem]`} key={job.id}>
           <div className="lg:flex lg:items-center lg:gap-[2.4rem]">
